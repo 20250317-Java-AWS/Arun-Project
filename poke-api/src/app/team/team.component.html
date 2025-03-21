@@ -1,1 +1,18 @@
-<p>team works!</p>
+
+<div class="pokemon-grid">
+    <div class="box" *ngFor="let pokemon of pokemons">
+        <img [src] ="pokemon.sprites.front_default" alt="Pokemons">
+        <h3>{{pokemon.name}}</h3>
+        <P>
+            <b>Type:</b> {{pokemon.types[0].type.name}}
+        </P>
+        <P>
+            <b>Height:</b> {{pokemon.height}}
+        </P><P>
+            <b>Health:</b> {{pokemon.stats[0].base_stat}}
+        </P>
+        
+
+    </div>
+    
+</div>
